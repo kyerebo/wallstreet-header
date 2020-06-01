@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### An exercise in building a responsive web page header that responds to window/device screen size.
 
 ## Available Scripts
 

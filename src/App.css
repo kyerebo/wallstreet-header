@@ -1,38 +1,86 @@
-.App {
+.stocks {
+  background-color: black;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.stock-names {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.facebook,
+.twitter,
+.grubhub,
+.uber,
+.lyft {
+  display: inline-block;
+  padding: 0px 2em;
+}
+.header {
+  width: 100%;
+  height: 5em;
+  background-color: lightgray;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu-button {
+  float: left;
+  padding: 1em;
+}
+.menu {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.title {
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+  transform: scale(1, 1.4);
+  margin-bottom: 0px;
+}
+
+.subheading {
+  display: block;
+  margin: 0px;
+  font-size: 9px;
+  font-family: sans-serif;
+}
+
+.title2 {
+  display: none;
+  font-family: "Times New Roman", Times, serif;
+  transform: scale(1, 1.4);
+}
+.search {
+  float: right;
+  padding: 1em;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 580px) {
+  .title {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .title2 {
+    display: inline-block;
+  }
+  .grubhub {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .uber {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .subheading {
+    display: none;
+  }
+  .lyft {
+    display: none;
   }
 }
